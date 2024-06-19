@@ -33,7 +33,9 @@ const page = () => {
     <>
       <div className=" mt-24">
         <CsDetail />
-        <CasestudyVideo />
+        <div className="h-screen">
+          <CasestudyVideo />
+        </div>
         <CasestudyBottomDetials />
         <StandardSection>
           <div className=" py-32">
