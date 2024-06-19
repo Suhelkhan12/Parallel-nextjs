@@ -1,5 +1,4 @@
 import CasestudyBottomDetials from "@/component/CasestudyBottomDetials/CasestudyBottomDetials";
-import CsDetail from "@/component/CasestudyDetail/CsDetail";
 import CasestudyVideo from "@/component/CasestudyVideo/CasestudyVideo";
 import StandardSection from "@/component/StandardSection/StandardSection";
 import Image from "next/image";
@@ -44,7 +43,9 @@ const page = () => {
               />
             </div>
             <div className="mt-4">
-              <h1 className="">Every document, all at once</h1>
+              <h1 className=" text-[4.5rem] font-extrabold lh-140">
+                Every document, all at once
+              </h1>
             </div>
             <div className="mt-2 text-[1.5rem] lh-140">
               <p>Reimagining digital documents for a billion Indians</p>
