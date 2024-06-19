@@ -1,13 +1,7 @@
-"use client";
-import React from "react";
-import { TwitterTweetEmbed } from "react-twitter-embed";
+import { Tweet } from "react-tweet";
 
 const TweetEmbed = () => {
-  return (
-    <div>
-      <TwitterTweetEmbed tweetId={"1293484000271507458"} />
-    </div>
-  );
+  return <Tweet id="1293484000271507458" />;
 };
 
 export default TweetEmbed;
