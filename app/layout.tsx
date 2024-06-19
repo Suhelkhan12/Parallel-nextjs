@@ -3,6 +3,7 @@ import "./globals.css";
 import { LenisScroll } from "@/component/LenisScroll/LenisScroll";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/component/Navbar/Navbar";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Case Studies | UX Design Agency | Parallel",
@@ -17,6 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <body>
         <Navbar />
         <LenisScroll>{children}</LenisScroll>

@@ -43,16 +43,16 @@ const page = () => {
               />
             </div>
             <div className="mt-4">
-              {/* <h1 className=" text-[4.5rem] font-extrabold lh-140">
+              <h1 className=" text-[4.5rem] font-extrabold lh-140">
                 Every document, all at once
-              </h1> */}
+              </h1>
             </div>
             <div className="mt-2 text-[1.5rem] lh-140">
               <p>Reimagining digital documents for a billion Indians</p>
             </div>
           </StandardSection>
         </div>
-        <div className=" min-h-screen">
+        <div className="">
           <CasestudyVideo />
         </div>
         <CasestudyBottomDetials />
