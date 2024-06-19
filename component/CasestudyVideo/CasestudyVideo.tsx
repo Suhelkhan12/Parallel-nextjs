@@ -6,8 +6,7 @@ import VideoComponent from "../VideoComponent/VideoComponent";
 const CasestudyVideo = () => {
   return (
     <div>
-      {/* <VideoComponent /> */}
-      <Image src={dummyImage} alt="nsk" className=" w-full"></Image>
+      <Image src={dummyImage} alt="nsk" className=" w-full" priority></Image>
     </div>
   );
 };

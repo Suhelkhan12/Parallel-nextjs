@@ -19,7 +19,6 @@ import lottie4 from "/public/mobilescreen.json";
 import lottie5 from "/public/animatin.json";
 import { Metadata } from "next";
 import LottiePlayer from "@/component/LottiePlayer/LottiePlayer";
-import { TwitterTweetEmbed } from "react-twitter-embed";
 import TweetEmbed from "@/component/Tweet/TweetEmbed";
 
 export const metadata: Metadata = {

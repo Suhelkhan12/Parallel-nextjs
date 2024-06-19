@@ -63,23 +63,6 @@ body {
 .nav-link{
     font-size: .875rem;
 }
-.casestudy_details{
-    padding-top: 2rem;
-    padding-bottom: 3.5rem;
-}
-.casestudy_detail-heading-wrapper{
-margin-top: 1rem;
-}
-.casestudy_detail-heading{
-    font-size: 4.25rem;
-    font-weight: 700;
-    line-height: 120%;
-}
-.casestudy_detail-subheading-wrapper{
-    margin-top: .5rem;
-    font-size: 1.75rem;
-    line-height: 140%;
-}
 .casestudy_bottom-details{
     padding-top: 5rem;
 }
