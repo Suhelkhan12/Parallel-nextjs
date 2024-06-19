@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { LenisScroll } from "@/component/LenisScroll/LenisScroll";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/component/Navbar/Navbar";
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         <LenisScroll>{children}</LenisScroll>
+        <SpeedInsights />
       </body>
     </html>
   );
