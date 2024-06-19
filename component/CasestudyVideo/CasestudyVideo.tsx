@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import dummyImage from "/public/casestudyImages/4.png";
+import dummyImage from "/public/casestudyImages/3.png";
 import VideoComponent from "../VideoComponent/VideoComponent";
 
 const CasestudyVideo = () => {
