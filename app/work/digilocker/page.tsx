@@ -1,6 +1,8 @@
 import CasestudyBottom from "@/components/CasestudyBottom/CasestudyBottom";
 import CasestudyDetails from "@/components/CasestudyDetails/CasestudyDetails";
 import CasestudyVideoFallback from "@/components/CasestudyVideoFallback/CasestudyVideoFallback";
+import DigilockerSecond from "@/components/Digilocker/DigilockerSecond/DigilockerSecond";
+import DigilockerThird from "@/components/Digilocker/DigilockerThird/DigilockerThird";
 import StandardSection from "@/components/StandardSection/StandardSection";
 import {
   digilockerDetails,
@@ -11,7 +13,7 @@ import { Suspense } from "react";
 const page = () => {
   return (
     <>
-      <div className=" mb-40">
+      <>
         <StandardSection>
           <div className=" mt-[5.25rem]">
             <div className=" pb-14 pt-8">
@@ -32,7 +34,9 @@ const page = () => {
         <StandardSection>
           <CasestudyBottom {...digilockerBottomDetails} />
         </StandardSection>
-      </div>
+      </>
+      <DigilockerSecond />
+      <DigilockerThird />
     </>
   );
 };

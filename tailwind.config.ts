@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-       "heading-bg":"url('/casestudyImages/heading-bg.svg')"
+        "span-bg": "url('/casestudyImages/heading-bg.svg')",
       },
     },
   },
