@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import CasestudyBottom from "@/components/CasestudyBottom/CasestudyBottom";
 import CasestudyDetails from "@/components/CasestudyDetails/CasestudyDetails";
 import CasestudyVideoFallback from "@/components/CasestudyVideoFallback/CasestudyVideoFallback";
@@ -8,7 +9,8 @@ import {
   digilockerDetails,
   digilockerBottomDetails,
 } from "@/constants/casestudydata/data";
-import { Suspense } from "react";
+import DigilockerFourth from "@/components/Digilocker/DigilockerFourth/DigilockerFourth";
+import DigilockerFifth from "@/components/Digilocker/DigilockerFifth/DigilockerFifth";
 
 const page = () => {
   return (
@@ -37,6 +39,10 @@ const page = () => {
       </>
       <DigilockerSecond />
       <DigilockerThird />
+      <DigilockerFourth />
+      <>
+        <DigilockerFifth />
+      </>
     </>
   );
 };

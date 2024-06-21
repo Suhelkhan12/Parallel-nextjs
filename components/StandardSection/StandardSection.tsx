@@ -1,10 +1,15 @@
 import { ReactNode } from "react";
 
-const StandardSection = ({ children }: { children: ReactNode }) => {
+type StandardSectionProps = {
+  children: ReactNode;
+  classname?: string;
+};
+
+const StandardSection = (props: StandardSectionProps) => {
   return (
-    <section>
+    <section className={props.classname}>
       <div className="mx-auto px-10">
-        <div className="mx-auto w-full max-w-7xl">{children}</div>
+        <div className="mx-auto w-full max-w-7xl">{props.children}</div>
       </div>
     </section>
   );
