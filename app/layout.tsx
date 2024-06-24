@@ -1,7 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/components/Navbar/Navbar";
 
 export const metadata: Metadata = {
@@ -20,7 +19,6 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
-        <SpeedInsights />
       </body>
     </html>
   );
