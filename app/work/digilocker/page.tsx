@@ -11,6 +11,7 @@ import {
 } from "@/constants/casestudydata/data";
 import DigilockerFourth from "@/components/Digilocker/DigilockerFourth/DigilockerFourth";
 import DigilockerFifth from "@/components/Digilocker/DigilockerFifth/DigilockerFifth";
+import DigilockerSixth from "@/components/Digilocker/DigilockerSixth/DigilockerSixth";
 
 const page = () => {
   return (
@@ -42,6 +43,7 @@ const page = () => {
       <DigilockerFourth />
       <>
         <DigilockerFifth />
+        <DigilockerSixth />
       </>
     </>
   );

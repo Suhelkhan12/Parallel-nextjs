@@ -1,6 +1,8 @@
 import Image from "next/image";
 import StandardSection from "@/components/StandardSection/StandardSection";
 import H2 from "@/components/UI/Headings/H2/H2";
+import leftBottomImg from "../../../public/casestudyImages/g2.png";
+import rightTopImg from "../../../public/casestudyImages/g1.png";
 
 const DigilockerFifth = () => {
   return (
@@ -15,25 +17,17 @@ const DigilockerFifth = () => {
         </div>
 
         <div className=" absolute bottom-auto left-auto right-0 top-0 w-full max-w-[23rem] translate-y-24">
-          <div className="relative h-[224px] w-full rounded-lg">
-            <Image
-              src={"/casestudyImages/g1.png"}
-              alt="Parallel team discussing designs with Digilocker team"
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-          </div>
+          <Image
+            src={rightTopImg}
+            alt="Parallel team discussing designs with Digilocker team"
+          />
         </div>
 
-        <div className=" absolute bottom-0 left-0 right-auto top-auto w-full max-w-[21.875rem] translate-x-24 translate-y-5 shadow-md ">
-          <div className="relative h-[304px] w-full ">
-            <Image
-              src={"/casestudyImages/g2.png"}
-              alt="Parallel team discussing designs with Digilocker team"
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-          </div>
+        <div className=" absolute bottom-0 left-0 right-auto top-auto w-full max-w-[25rem] translate-x-24 translate-y-5 shadow-md ">
+          <Image
+            src={leftBottomImg}
+            alt="Parallel team discussing designs with Digilocker team"
+          />
         </div>
 
         <div className=" absolute bottom-0 left-auto right-0  top-auto -translate-x-16 -translate-y-16">

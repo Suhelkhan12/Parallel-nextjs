@@ -2,6 +2,9 @@ import Image from "next/image";
 import React from "react";
 import StandardSection from "@/components/StandardSection/StandardSection";
 import H2 from "@/components/UI/Headings/H2/H2";
+import img1 from "../../../public/casestudyImages/1.png";
+import img2 from "../../../public/casestudyImages/2.png";
+import img3 from "../../../public/casestudyImages/3.png";
 
 const DigilockerThird = () => {
   return (
@@ -27,30 +30,15 @@ const DigilockerThird = () => {
           </div>
         </div>
         <div className=" mt-24 flex items-center justify-between gap-[8.75rem]">
-          <div className=" relative h-[252px] w-full max-w-[21.75rem] ">
-            <Image
-              src={"/casestudyImages/1.png"}
-              alt="People sitting and discussing things"
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-          </div>
-          <div className="relative h-[340px] w-full max-w-[18.375rem]">
-            <Image
-              src={"/casestudyImages/2.png"}
-              alt="Parallel team discussing designs with Digilocker team"
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-          </div>
-          <div className="relative h-[284px] w-full max-w-[21.75rem]">
-            <Image
-              src={"/casestudyImages/3.png"}
-              alt="Parallel team discussing designs with Digilocker team"
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-          </div>
+          <Image src={img1} alt="People sitting and discussing things" />
+          <Image
+            src={img2}
+            alt="Parallel team discussing designs with Digilocker team"
+          />
+          <Image
+            src={img3}
+            alt="Parallel team discussing designs with Digilocker team"
+          />
         </div>
       </div>
     </StandardSection>

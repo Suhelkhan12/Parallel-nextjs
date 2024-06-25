@@ -1,5 +1,6 @@
 import Image from "next/image";
 import H2 from "@/components/UI/Headings/H2/H2";
+import img1 from "../../../public/casestudyImages/4.png";
 
 const DigilockerFourth = () => {
   return (
@@ -35,14 +36,10 @@ const DigilockerFourth = () => {
         </div>
       </div>
       <div className=" flex w-full max-w-[50%] flex-col justify-center">
-        <div className="max-w-[100%]] relative size-full">
-          <Image
-            src={"/casestudyImages/4.png"}
-            alt="Parallel team discussing designs with Digilocker team"
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
+        <Image
+          src={img1}
+          alt="Parallel team discussing designs with Digilocker team"
+        />
       </div>
     </section>
   );
