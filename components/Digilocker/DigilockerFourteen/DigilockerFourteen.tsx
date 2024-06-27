@@ -1,9 +1,9 @@
 import StandardSection from "@/components/StandardSection/StandardSection";
 import H2 from "@/components/UI/Headings/H2/H2";
-import React, { Suspense } from "react";
-import rightLottie from "../../../public/mobile.json";
-import cofettie from "../../../public/confetti.json";
-import LottiePlayer from "@/components/Lottie/LottiePlayer";
+// import React, { Suspense } from "react";
+// import rightLottie from "../../../public/mobile.json";
+// import cofettie from "../../../public/confetti.json";
+// import LottiePlayer from "@/components/Lottie/LottiePlayer";
 
 const DigilockerFourteen = () => {
   return (
@@ -33,14 +33,14 @@ const DigilockerFourteen = () => {
           </div>
         </div>
         <div className=" relative w-full max-w-[40%]">
-          <Suspense fallback={<p>Loading...</p>}>
+          {/* <Suspense fallback={<p>Loading...</p>}>
             <LottiePlayer data={rightLottie} />
           </Suspense>
           <div className=" absolute inset-x-auto top-12 size-60">
             <Suspense fallback={<p>Loading...</p>}>
               <LottiePlayer data={cofettie} />
             </Suspense>
-          </div>
+          </div> */}
         </div>
       </div>
     </StandardSection>

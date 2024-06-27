@@ -1,7 +1,7 @@
 import H2 from "@/components/UI/Headings/H2/H2";
-import React, { Suspense } from "react";
-import LottiePlayer from "@/components/Lottie/LottiePlayer";
-import lottieData from "../../../public/mobilescreen.json";
+// import React, { Suspense } from "react";
+// import LottiePlayer from "@/components/Lottie/LottiePlayer";
+// import lottieData from "../../../public/mobilescreen.json";
 
 const DigilockerTenth = () => {
   return (
@@ -35,9 +35,9 @@ const DigilockerTenth = () => {
         </div>
       </div>
       <div className=" flex min-h-[800px] w-full max-w-[50%] items-center bg-digi-ten-bg bg-center bg-no-repeat">
-        <Suspense fallback={<p>Loading</p>}>
+        {/* <Suspense fallback={<p>Loading</p>}>
           <LottiePlayer data={lottieData} />
-        </Suspense>
+        </Suspense> */}
       </div>
     </section>
   );

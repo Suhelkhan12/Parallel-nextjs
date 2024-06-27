@@ -1,9 +1,9 @@
 import Image from "next/image";
-import React, { Suspense } from "react";
+// import React, { Suspense } from "react";
 import rightImage from "../../../public/casestudyImages/77777.png";
 import H2 from "@/components/UI/Headings/H2/H2";
-import LottiePlayer from "@/components/Lottie/LottiePlayer";
-import lottieData from "../../../public/Problem2_TextAnimation.json";
+// import LottiePlayer from "@/components/Lottie/LottiePlayer";
+// import lottieData from "../../../public/Problem2_TextAnimation.json";
 
 const DigilockerEight = () => {
   return (
@@ -50,9 +50,9 @@ const DigilockerEight = () => {
           placeholder="blur"
         />
         <div className=" absolute bottom-4 left-8 right-auto">
-          <Suspense fallback={<p className="text-black">Loading...</p>}>
+          {/* <Suspense fallback={<p className="text-black">Loading...</p>}>
             <LottiePlayer data={lottieData} />
-          </Suspense>
+          </Suspense> */}
         </div>
       </div>
     </section>
