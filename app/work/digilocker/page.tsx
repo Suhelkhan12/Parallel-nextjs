@@ -12,6 +12,14 @@ import {
 import DigilockerFourth from "@/components/Digilocker/DigilockerFourth/DigilockerFourth";
 import DigilockerFifth from "@/components/Digilocker/DigilockerFifth/DigilockerFifth";
 import DigilockerSixth from "@/components/Digilocker/DigilockerSixth/DigilockerSixth";
+import DigilockerNinth from "@/components/Digilocker/DigilockerNine/DigilockerNinth";
+import DigilockerTenth from "@/components/Digilocker/DigilockerTenth/DigilockerTenth";
+import DigilockerEleven from "@/components/Digilocker/DigilockerEleven/DigilockerEleven";
+import DigilockerTwelfth from "@/components/Digilocker/DigilockerTwelft/DigilockerTwelft";
+import DigilockerEight from "@/components/Digilocker/DigilockerEight/DigilockerEight";
+import DigilockerSeventh from "@/components/Digilocker/DigilockerSeventh/DigilockerSeventh";
+import DigilockerThirteen from "@/components/Digilocker/DigilockerThirteen/DigilockerThirteen";
+import DigilockerFourteen from "@/components/Digilocker/DigilockerFourteen/DigilockerFourteen";
 
 const page = () => {
   return (
@@ -41,10 +49,16 @@ const page = () => {
       <DigilockerSecond />
       <DigilockerThird />
       <DigilockerFourth />
-      <>
-        <DigilockerFifth />
-        <DigilockerSixth />
-      </>
+      <DigilockerFifth />
+      <DigilockerSixth />
+      <DigilockerSeventh />
+      <DigilockerEight />
+      <DigilockerNinth />
+      <DigilockerTenth />
+      <DigilockerEleven />
+      <DigilockerTwelfth />
+      <DigilockerThirteen />
+      <DigilockerFourteen />
     </>
   );
 };

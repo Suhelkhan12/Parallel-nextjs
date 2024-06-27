@@ -30,14 +30,20 @@ const DigilockerThird = () => {
           </div>
         </div>
         <div className=" mt-24 flex items-center justify-between gap-[8.75rem]">
-          <Image src={img1} alt="People sitting and discussing things" />
+          <Image
+            src={img1}
+            alt="People sitting and discussing things"
+            placeholder="blur"
+          />
           <Image
             src={img2}
             alt="Parallel team discussing designs with Digilocker team"
+            placeholder="blur"
           />
           <Image
             src={img3}
             alt="Parallel team discussing designs with Digilocker team"
+            placeholder="blur"
           />
         </div>
       </div>

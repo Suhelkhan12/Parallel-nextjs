@@ -20,6 +20,7 @@ const DigilockerFifth = () => {
           <Image
             src={rightTopImg}
             alt="Parallel team discussing designs with Digilocker team"
+            placeholder="blur"
           />
         </div>
 
@@ -27,6 +28,7 @@ const DigilockerFifth = () => {
           <Image
             src={leftBottomImg}
             alt="Parallel team discussing designs with Digilocker team"
+            placeholder="blur"
           />
         </div>
 

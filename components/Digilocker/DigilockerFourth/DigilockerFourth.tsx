@@ -39,6 +39,7 @@ const DigilockerFourth = () => {
         <Image
           src={img1}
           alt="Parallel team discussing designs with Digilocker team"
+          placeholder="blur"
         />
       </div>
     </section>

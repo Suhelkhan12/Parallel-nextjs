@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "span-bg": "url('/casestudyImages/heading-bg.svg')",
+        "digi-ten-bg": "url('/casestudyImages/blue-bg.svg')",
       },
     },
   },
