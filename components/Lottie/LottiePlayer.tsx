@@ -1,11 +1,11 @@
 "use client";
-import Lottie from "lottie-react";
+import Lottie from "react-lottie-player";
 interface LottiePlayerProps {
-  data: unknown;
+  data: object;
 }
 
 const LottiePlayer = ({ data }: LottiePlayerProps) => {
-  return <Lottie animationData={data} />;
+  return <Lottie animationData={data} play loop />;
 };
 
 export default LottiePlayer;

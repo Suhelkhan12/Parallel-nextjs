@@ -1,14 +1,14 @@
 import Image from "next/image";
-// import LottiePlayer from "@/components/Lottie/LottiePlayer";
+import LottiePlayer from "@/components/Lottie/LottiePlayer";
 import imgleft from "../../../public/casestudyImages/girl.png";
-// import lottieData from "../../../public/Problem2_TextAnimation.json";
+import lottieData from "../../../public/Problem2_TextAnimation.json";
 import H2 from "@/components/UI/Headings/H2/H2";
 const DigilockerEleven = () => {
   return (
     <section className="flex">
       <div className="relative w-full max-w-[50%]">
         <div className="absolute left-auto right-8 top-8 w-full max-w-[380px]">
-          {/* <LottiePlayer data={lottieData} /> */}
+          <LottiePlayer data={lottieData} />
         </div>
         <Image src={imgleft} placeholder="blur" alt="Girl with phone in hand" />
       </div>

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import H2 from "@/components/UI/Headings/H2/H2";
 import img1 from "../../../public/casestudyImages/4.png";
+import LottiePlayer from "@/components/Lottie/LottiePlayer";
+import lottieData from "@/public/Problem1_TextAnimation.json";
 
 const DigilockerFourth = () => {
   return (
@@ -35,12 +37,15 @@ const DigilockerFourth = () => {
           </div>
         </div>
       </div>
-      <div className=" flex w-full max-w-[50%] flex-col justify-center">
+      <div className=" relative z-10 flex w-full max-w-[50%] flex-col justify-center">
         <Image
           src={img1}
           alt="Parallel team discussing designs with Digilocker team"
           placeholder="blur"
         />
+        <div className=" absolute bottom-0 left-8 z-20 w-full max-w-[25rem]">
+          <LottiePlayer data={lottieData} />
+        </div>
       </div>
     </section>
   );

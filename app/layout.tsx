@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
+import LenisScroll from "@/components/Lenis/Lenis";
 
 export const metadata: Metadata = {
   title: "Case Studies | UX Design Agency | Parallel",
@@ -18,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        {children}
+        <LenisScroll>{children}</LenisScroll>
       </body>
     </html>
   );
