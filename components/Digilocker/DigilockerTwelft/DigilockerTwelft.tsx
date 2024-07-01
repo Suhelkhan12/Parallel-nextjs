@@ -1,6 +1,7 @@
-import LottiePlayer from "@/components/Lottie/LottiePlayer";
+import dynamic from "next/dynamic";
 import lottieData from "../../../public/animatin.json";
 import H2 from "@/components/UI/Headings/H2/H2";
+const LottiePlayer = dynamic(() => import("@/components/Lottie/LottiePlayer"));
 
 const DigilockerTwelfth = () => {
   return (

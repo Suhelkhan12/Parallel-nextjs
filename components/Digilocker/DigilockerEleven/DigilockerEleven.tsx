@@ -1,8 +1,9 @@
 import Image from "next/image";
-import LottiePlayer from "@/components/Lottie/LottiePlayer";
 import imgleft from "../../../public/casestudyImages/girl.png";
 import lottieData from "../../../public/Problem2_TextAnimation.json";
 import H2 from "@/components/UI/Headings/H2/H2";
+import dynamic from "next/dynamic";
+const LottiePlayer = dynamic(() => import("@/components/Lottie/LottiePlayer"));
 const DigilockerEleven = () => {
   return (
     <section className="flex">

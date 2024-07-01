@@ -1,8 +1,9 @@
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import rightImage from "../../../public/casestudyImages/77777.png";
 import H2 from "@/components/UI/Headings/H2/H2";
 import lottieData from "../../../public/Problem2_TextAnimation.json";
-import LottiePlayer from "@/components/Lottie/LottiePlayer";
+const LottiePlayer = dynamic(() => import("@/components/Lottie/LottiePlayer"));
 
 const DigilockerEight = () => {
   return (

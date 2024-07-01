@@ -2,7 +2,8 @@ import StandardSection from "@/components/StandardSection/StandardSection";
 import H2 from "@/components/UI/Headings/H2/H2";
 import rightLottie from "../../../public/mobile.json";
 import cofettie from "../../../public/confetti.json";
-import LottiePlayer from "@/components/Lottie/LottiePlayer";
+import dynamic from "next/dynamic";
+const LottiePlayer = dynamic(() => import("@/components/Lottie/LottiePlayer"));
 
 const DigilockerFourteen = () => {
   return (
