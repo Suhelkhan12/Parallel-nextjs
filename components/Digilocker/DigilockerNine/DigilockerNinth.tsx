@@ -1,12 +1,15 @@
 import dynamic from "next/dynamic";
 import H2 from "@/components/UI/Headings/H2/H2";
+import { Suspense } from "react";
 const LottiePlayer = dynamic(() => import("@/components/Lottie/LottiePlayer"));
 
 const DigilockerNinth = () => {
   return (
     <section className=" bg-[#323235] pt-[18.75rem]">
       <div className="mx-auto w-full max-w-[25rem] rounded-3xl border border-white p-2">
-        <LottiePlayer data="https://cdn.jsdelivr.net/gh/Suhelkhan12/Parallel-nextjs@latest/public/lotties/digilocker/fetch-adhaar.lottie" />
+        <Suspense fallback={<p>Loading</p>}>
+          <LottiePlayer data="https://cdn.jsdelivr.net/gh/Suhelkhan12/Parallel-nextjs@latest/public/lotties/digilocker/fetch-adhaar.lottie" />
+        </Suspense>
       </div>
       <div className=" flex flex-col items-center">
         <H2 classname=" text-[2.25rem] lh-140 text-white mt-4">

@@ -32,9 +32,11 @@ const DigilockerFourteen = () => {
           </div>
         </div>
         <div className=" relative w-full max-w-[40%]">
-          <LottiePlayer data="https://cdn.jsdelivr.net/gh/Suhelkhan12/Parallel-nextjs@latest/public/lotties/digilocker/mobile.lottie" />
-          <div className=" absolute inset-x-auto top-12 size-8">
-            <Suspense fallback={<p>Loading...</p>}>
+          <Suspense fallback={<p>Loading...</p>}>
+            <LottiePlayer data="https://cdn.jsdelivr.net/gh/Suhelkhan12/Parallel-nextjs@latest/public/lotties/digilocker/mobile.lottie" />
+          </Suspense>
+          <div className=" absolute inset-x-auto top-12">
+            <Suspense fallback={<p>Loading</p>}>
               <LottiePlayer data="https://cdn.jsdelivr.net/gh/Suhelkhan12/Parallel-nextjs@latest/public/lotties/digilocker/confetti.lottie" />
             </Suspense>
           </div>

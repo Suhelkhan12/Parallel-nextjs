@@ -6,7 +6,7 @@ interface LottiePlayerProps {
 }
 
 const LottiePlayer = ({ data }: LottiePlayerProps) => {
-  return <DotLottieReact src={data} loop autoplay />;
+  return <DotLottieReact src={data} loop autoplay rel="preconnect" />;
 };
 
 export default LottiePlayer;
