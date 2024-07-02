@@ -51,7 +51,7 @@ const DigilockerEight = () => {
         />
         <div className=" absolute bottom-4 left-8 right-auto">
           <Suspense fallback={<p>Loading...</p>}>
-            <LottiePlayer data="https://cdn.jsdelivr.net/gh/amanunparallel/parallel-web@latest/lottie/Clo.lottie" />
+            <LottiePlayer data="https://cdn.jsdelivr.net/gh/Suhelkhan12/Parallel-nextjs@latest/public/lotties/digilocker/problem-2.lottie" />
           </Suspense>
         </div>
       </div>

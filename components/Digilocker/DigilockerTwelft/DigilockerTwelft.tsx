@@ -7,7 +7,7 @@ const DigilockerTwelfth = () => {
   return (
     <section className=" bg-[#323235] pt-[18.75rem]">
       <div className="mx-auto w-full max-w-[25rem] rounded-3xl border border-white p-2">
-        <LottiePlayer data="https://cdn.jsdelivr.net/gh/amanunparallel/parallel-web@latest/lottie/Clo.lottie" />
+        <LottiePlayer data="https://cdn.jsdelivr.net/gh/Suhelkhan12/Parallel-nextjs@latest/public/lotties/digilocker/animation.lottie" />
       </div>
       <div className=" flex flex-col items-center">
         <H2 classname=" text-[2.25rem] lh-140 text-white mt-4">

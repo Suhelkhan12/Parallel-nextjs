@@ -43,7 +43,7 @@ const DigilockerFourth = () => {
           placeholder="blur"
         />
         <div className=" absolute bottom-0 left-8 z-20 w-full max-w-[25rem]">
-          <LottiePlayer data="https://cdn.jsdelivr.net/gh/amanunparallel/parallel-web@latest/lottie/Clo.lottie" />
+          <LottiePlayer data="https://cdn.jsdelivr.net/gh/Suhelkhan12/Parallel-nextjs@latest/public/lotties/digilocker/problem-1.lottie" />
         </div>
       </div>
     </section>

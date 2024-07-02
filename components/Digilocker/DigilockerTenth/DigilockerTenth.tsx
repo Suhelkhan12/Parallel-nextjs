@@ -34,7 +34,7 @@ const DigilockerTenth = () => {
         </div>
       </div>
       <div className=" flex min-h-[800px] w-full max-w-[50%] items-center bg-digi-ten-bg bg-center bg-no-repeat">
-        <LottiePlayer data="https://uploads-ssl.webflow.com/654b1d09f45e7fa434ed24ef/65a908a9f35a2607160ca592_lrj49xfj.lottie" />
+        <LottiePlayer data="https://cdn.jsdelivr.net/gh/Suhelkhan12/Parallel-nextjs@latest/public/lotties/digilocker/mobile-screen.lottie" />
       </div>
     </section>
   );

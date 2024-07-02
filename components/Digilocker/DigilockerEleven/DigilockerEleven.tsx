@@ -11,7 +11,7 @@ const DigilockerEleven = () => {
       <div className="relative w-full max-w-[50%]">
         <div className="absolute left-auto right-8 top-8 w-full max-w-[380px]">
           <Suspense fallback={<p>Loading...</p>}>
-            <LottiePlayer data="https://cdn.jsdelivr.net/gh/amanunparallel/parallel-web@latest/lottie/Clo.lottie" />
+            <LottiePlayer data="https://cdn.jsdelivr.net/gh/Suhelkhan12/Parallel-nextjs@latest/public/lotties/digilocker/problem-2.lottie" />
           </Suspense>
         </div>
         <Image src={imgleft} placeholder="blur" alt="Girl with phone in hand" />
