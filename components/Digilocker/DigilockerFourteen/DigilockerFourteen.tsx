@@ -1,8 +1,7 @@
 import StandardSection from "@/components/StandardSection/StandardSection";
 import H2 from "@/components/UI/Headings/H2/H2";
-import rightLottie from "../../../public/mobile.json";
-import cofettie from "../../../public/confetti.json";
 import dynamic from "next/dynamic";
+import { Suspense } from "react";
 const LottiePlayer = dynamic(() => import("@/components/Lottie/LottiePlayer"));
 
 const DigilockerFourteen = () => {
@@ -33,9 +32,11 @@ const DigilockerFourteen = () => {
           </div>
         </div>
         <div className=" relative w-full max-w-[40%]">
-          <LottiePlayer data={rightLottie} />
-          <div className=" absolute inset-x-auto top-12 size-60">
-            <LottiePlayer data={cofettie} />
+          <LottiePlayer data="https://cdn.jsdelivr.net/gh/amanunparallel/parallel-web@latest/lottie/Clo.lottie" />
+          <div className=" absolute inset-x-auto top-12 size-8">
+            <Suspense fallback={<p>Loading...</p>}>
+              <LottiePlayer data="https://cdn.jsdelivr.net/gh/amanunparallel/parallel-web@latest/lottie/Clo.lottie" />
+            </Suspense>
           </div>
         </div>
       </div>

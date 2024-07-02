@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import rightImage from "../../../public/casestudyImages/77777.png";
 import H2 from "@/components/UI/Headings/H2/H2";
-import lottieData from "../../../public/Problem2_TextAnimation.json";
+import { Suspense } from "react";
 const LottiePlayer = dynamic(() => import("@/components/Lottie/LottiePlayer"));
 
 const DigilockerEight = () => {
@@ -50,7 +50,9 @@ const DigilockerEight = () => {
           placeholder="blur"
         />
         <div className=" absolute bottom-4 left-8 right-auto">
-          <LottiePlayer data={lottieData} />
+          <Suspense fallback={<p>Loading...</p>}>
+            <LottiePlayer data="https://cdn.jsdelivr.net/gh/amanunparallel/parallel-web@latest/lottie/Clo.lottie" />
+          </Suspense>
         </div>
       </div>
     </section>

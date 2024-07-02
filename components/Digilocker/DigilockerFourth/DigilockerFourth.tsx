@@ -2,7 +2,6 @@ import Image from "next/image";
 import H2 from "@/components/UI/Headings/H2/H2";
 import img1 from "../../../public/casestudyImages/4.png";
 import LottiePlayer from "@/components/Lottie/LottiePlayer";
-import lottieData from "@/public/Problem1_TextAnimation.json";
 
 const DigilockerFourth = () => {
   return (
@@ -44,7 +43,7 @@ const DigilockerFourth = () => {
           placeholder="blur"
         />
         <div className=" absolute bottom-0 left-8 z-20 w-full max-w-[25rem]">
-          <LottiePlayer data={lottieData} />
+          <LottiePlayer data="https://cdn.jsdelivr.net/gh/amanunparallel/parallel-web@latest/lottie/Clo.lottie" />
         </div>
       </div>
     </section>

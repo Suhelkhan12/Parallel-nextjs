@@ -1,6 +1,5 @@
 import H2 from "@/components/UI/Headings/H2/H2";
 import dynamic from "next/dynamic";
-import lottieData from "../../../public/mobilescreen.json";
 const LottiePlayer = dynamic(() => import("@/components/Lottie/LottiePlayer"));
 
 const DigilockerTenth = () => {
@@ -35,7 +34,7 @@ const DigilockerTenth = () => {
         </div>
       </div>
       <div className=" flex min-h-[800px] w-full max-w-[50%] items-center bg-digi-ten-bg bg-center bg-no-repeat">
-        <LottiePlayer data={lottieData} />
+        <LottiePlayer data="https://uploads-ssl.webflow.com/654b1d09f45e7fa434ed24ef/65a908a9f35a2607160ca592_lrj49xfj.lottie" />
       </div>
     </section>
   );
