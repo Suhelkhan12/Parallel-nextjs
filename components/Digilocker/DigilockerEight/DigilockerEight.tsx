@@ -1,10 +1,8 @@
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import rightImage from "../../../public/casestudyImages/77777.png";
 import H2 from "@/components/UI/Headings/H2/H2";
 import { Suspense } from "react";
-const LottiePlayer = dynamic(() => import("@/components/Lottie/LottiePlayer"));
-
+import LottiePlayer from "@/components/Lottie/LottiePlayer";
 const DigilockerEight = () => {
   return (
     <section className=" flex items-center">
@@ -48,6 +46,7 @@ const DigilockerEight = () => {
           src={rightImage}
           alt="Woman looking at the phone"
           placeholder="blur"
+          loading="lazy"
         />
         <div className=" absolute bottom-4 left-8 right-auto">
           <Suspense fallback={<p>Loading...</p>}>

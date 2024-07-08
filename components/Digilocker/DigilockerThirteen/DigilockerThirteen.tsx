@@ -11,6 +11,7 @@ const DigilockerThirteen = () => {
           src={leftImage}
           alt="User profile image of didilocker app"
           placeholder="blur"
+          loading="lazy"
         />
       </div>
       <div className=" flex w-full max-w-[50%] items-center py-20 pl-[90px] pr-8">

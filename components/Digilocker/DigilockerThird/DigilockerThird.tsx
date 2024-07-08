@@ -34,16 +34,19 @@ const DigilockerThird = () => {
             src={img1}
             alt="People sitting and discussing things"
             placeholder="blur"
+            loading="lazy"
           />
           <Image
             src={img2}
             alt="Parallel team discussing designs with Digilocker team"
             placeholder="blur"
+            loading="lazy"
           />
           <Image
             src={img3}
             alt="Parallel team discussing designs with Digilocker team"
             placeholder="blur"
+            loading="lazy"
           />
         </div>
       </div>

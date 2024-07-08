@@ -42,6 +42,7 @@ const DigilockerFourth = () => {
           src={img1}
           alt="Parallel team discussing designs with Digilocker team"
           placeholder="blur"
+          loading="lazy"
         />
         <div className=" absolute bottom-0 left-8 z-20 w-full max-w-[25rem]">
           <Suspense fallback={<p>Loading...</p>}>

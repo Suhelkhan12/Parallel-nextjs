@@ -21,6 +21,7 @@ const DigilockerFifth = () => {
             src={rightTopImg}
             alt="Parallel team discussing designs with Digilocker team"
             placeholder="blur"
+            loading="lazy"
           />
         </div>
 
@@ -29,6 +30,7 @@ const DigilockerFifth = () => {
             src={leftBottomImg}
             alt="Parallel team discussing designs with Digilocker team"
             placeholder="blur"
+            loading="lazy"
           />
         </div>
 
