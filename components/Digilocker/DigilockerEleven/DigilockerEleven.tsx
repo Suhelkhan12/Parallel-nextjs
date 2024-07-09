@@ -2,17 +2,17 @@ import Image from "next/image";
 import imgleft from "../../../public/casestudyImages/girl.png";
 
 import H2 from "@/components/UI/Headings/H2/H2";
+import lottieData from "@/public/lotties/digilocker/Problem3_TextAnimation.json";
 import dynamic from "next/dynamic";
-import { Suspense } from "react";
+
 const LottiePlayer = dynamic(() => import("@/components/Lottie/LottiePlayer"));
+
 const DigilockerEleven = () => {
   return (
     <section className="flex">
       <div className="relative w-full max-w-[50%]">
         <div className="absolute left-auto right-8 top-8 w-full max-w-[380px]">
-          <Suspense fallback={<p>Loading...</p>}>
-            <LottiePlayer data="https://cdn.jsdelivr.net/gh/Suhelkhan12/Parallel-nextjs@latest/public/lotties/digilocker/problem-2.lottie" />
-          </Suspense>
+          <LottiePlayer animationData={lottieData} />
         </div>
         <Image src={imgleft} placeholder="blur" alt="Girl with phone in hand" />
       </div>

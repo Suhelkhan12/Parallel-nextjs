@@ -1,7 +1,9 @@
 import StandardSection from "@/components/StandardSection/StandardSection";
 import H2 from "@/components/UI/Headings/H2/H2";
+import Image from "next/image";
+import confetti from "@/public/lotties/digilocker/confetti.gif";
+import lottieData from "@/public/lotties/digilocker/mobile.json";
 import dynamic from "next/dynamic";
-import { Suspense } from "react";
 const LottiePlayer = dynamic(() => import("@/components/Lottie/LottiePlayer"));
 
 const DigilockerFourteen = () => {
@@ -32,13 +34,9 @@ const DigilockerFourteen = () => {
           </div>
         </div>
         <div className=" relative w-full max-w-[40%]">
-          <Suspense fallback={<p>Loading...</p>}>
-            <LottiePlayer data="https://cdn.jsdelivr.net/gh/Suhelkhan12/Parallel-nextjs@latest/public/lotties/digilocker/mobile.lottie" />
-          </Suspense>
+          <LottiePlayer animationData={lottieData} />
           <div className=" absolute inset-x-auto top-12">
-            <Suspense fallback={<p>Loading</p>}>
-              <LottiePlayer data="https://cdn.jsdelivr.net/gh/Suhelkhan12/Parallel-nextjs@latest/public/lotties/digilocker/confetti.lottie" />
-            </Suspense>
+            <Image src={confetti} alt="Confetti gif" />
           </div>
         </div>
       </div>

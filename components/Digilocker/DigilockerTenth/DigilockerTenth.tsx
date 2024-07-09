@@ -1,6 +1,6 @@
 import H2 from "@/components/UI/Headings/H2/H2";
+import lottieData from "@/public/lotties/digilocker/mobilescreen.json";
 import dynamic from "next/dynamic";
-import { Suspense } from "react";
 const LottiePlayer = dynamic(() => import("@/components/Lottie/LottiePlayer"));
 
 const DigilockerTenth = () => {
@@ -35,9 +35,7 @@ const DigilockerTenth = () => {
         </div>
       </div>
       <div className=" flex min-h-[800px] w-full max-w-[50%] items-center bg-digi-ten-bg bg-center bg-no-repeat">
-        <Suspense fallback={<p>Loading...</p>}>
-          <LottiePlayer data="https://cdn.jsdelivr.net/gh/Suhelkhan12/Parallel-nextjs@latest/public/lotties/digilocker/mobile-screen.lottie" />
-        </Suspense>
+        <LottiePlayer animationData={lottieData} />
       </div>
     </section>
   );

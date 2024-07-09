@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const DigilockerThirteen = () => {
   return (
-    <section className=" flex items-center">
+    <section className=" mt-[8.75rem] flex items-center">
       <div className=" w-full max-w-[50%]">
         <Image
           src={leftImage}

@@ -46,8 +46,6 @@ const DigilockerSixth = () => {
           <Image
             src={leftImage}
             alt="Person hand holding phone which shows digilocker screen."
-            priority
-            placeholder="blur"
             loading="lazy"
           />
         </div>

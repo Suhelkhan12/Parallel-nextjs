@@ -1,8 +1,10 @@
 import Image from "next/image";
 import rightImage from "../../../public/casestudyImages/77777.png";
 import H2 from "@/components/UI/Headings/H2/H2";
-import { Suspense } from "react";
-import LottiePlayer from "@/components/Lottie/LottiePlayer";
+import lottieData from "@/public/lotties/digilocker/Problem2_TextAnimation.json";
+import dynamic from "next/dynamic";
+const LottiePlayer = dynamic(() => import("@/components/Lottie/LottiePlayer"));
+
 const DigilockerEight = () => {
   return (
     <section className=" flex items-center">
@@ -49,9 +51,7 @@ const DigilockerEight = () => {
           loading="lazy"
         />
         <div className=" absolute bottom-4 left-8 right-auto">
-          <Suspense fallback={<p>Loading...</p>}>
-            <LottiePlayer data="https://cdn.jsdelivr.net/gh/Suhelkhan12/Parallel-nextjs@latest/public/lotties/digilocker/problem-2.lottie" />
-          </Suspense>
+          <LottiePlayer animationData={lottieData} />
         </div>
       </div>
     </section>
