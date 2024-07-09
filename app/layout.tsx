@@ -1,8 +1,16 @@
 import React from "react";
 import type { Metadata } from "next";
+// eslint-disable-next-line camelcase
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import LenisScroll from "@/components/Lenis/Lenis";
+
+const pJSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-plus-jakarta-sans",
+});
 
 export const metadata: Metadata = {
   title: "Case Studies | UX Design Agency | Parallel",
@@ -16,10 +24,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${pJSans.variable}`}>
       <body>
         <Navbar />
-        <LenisScroll>{children}</LenisScroll>
+        <LenisScroll>
+          <div className=" font-pjsans">{children}</div>
+        </LenisScroll>
       </body>
     </html>
   );

@@ -12,6 +12,9 @@ const config: Config = {
         "span-bg": "url('/casestudyImages/heading-bg.svg')",
         "digi-ten-bg": "url('/casestudyImages/blue-bg.svg')",
       },
+      fontFamily: {
+        pjsans: ["var(--font-plus-jakarta-sans)"],
+      },
     },
   },
   plugins: [],
